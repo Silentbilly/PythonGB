@@ -23,4 +23,4 @@ while daily_result <= final_target:
     day_counter = day_counter + 1.
     # print(f"{day_counter}-й день: {a:.2f}")
 
-print(f"Спортсмен досиг результата на {int(day_counter)} день")
+print(f"Спортсмен достиг результата на {int(day_counter)} день")
