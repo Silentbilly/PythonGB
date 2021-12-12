@@ -3,6 +3,6 @@
 
 num_input = int(input("Введите число n: "))
 
-sum_n = num_input + int(f"{num_input}{num_input}") + int(f"{num_input}{num_input}{num_input}")
+sum_n = num_input + int(f"{num_input}" * 2) + int(f"{num_input}" * 3)
 
-print(f"Сумма n + nn + nnn равна: {sum_n}")
+print(f"Сумма {num_input} + {num_input}{num_input} + {num_input}{num_input}{num_input} равна: {sum_n}")
