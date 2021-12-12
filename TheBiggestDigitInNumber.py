@@ -10,7 +10,7 @@ if num_input > 0:
         last_digit = num_input % 10
         if last_digit > the_biggest_digit:
             the_biggest_digit = last_digit
-            num_input = num_input // 10
+            num_input //= 10
         else:
             num_input = num_input // 10
     print(f"Самая большая цифра в числе: {the_biggest_digit}")

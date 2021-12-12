@@ -8,7 +8,7 @@ SECONDS_IN_DAY = SECONDS_IN_HOUR * 24
 time_input = int(input("Введите время в секундах: "))
 
 if time_input >= SECONDS_IN_DAY:
-    time_input = time_input % SECONDS_IN_DAY
+    time_input %= SECONDS_IN_DAY
 
 hours = time_input // SECONDS_IN_HOUR
 minutes = int((time_input / SECONDS_IN_HOUR * SECMINS_IN_MINHOUR) % SECMINS_IN_MINHOUR)
