@@ -20,7 +20,7 @@ day_counter = 1
 
 while daily_result <= final_target:
     daily_result += daily_result / 100 * RESULT_ENHANCING
-    day_counter +=   day_counter + 1.
+    day_counter += 1
     # print(f"{day_counter}-й день: {a:.2f}")
 
 print(f"Спортсмен достиг результата на {int(day_counter)} день")
