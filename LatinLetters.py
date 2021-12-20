@@ -17,9 +17,9 @@ def int_func(string):
 
 
 def main():
-    string = input("Введите предложение: ")
-
-    print(int_func(string))
+    print(int_func("as a MAN I WANT TO tell U"))
+    print(int_func("Что ничего не получится прямо СЕЙЧАС"))
+    print(int_func("Bu may be in december 31th"))
 
 
 if __name__ == "__main__":
