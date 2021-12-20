@@ -18,14 +18,14 @@ def my_func(x, y):
             result_2 *= 1 / x
             if i == abs(y):
                 break
-        print(result_1, result_2)
+        return result_1, result_2
     except ValueError as err:
-        print(err)
+        return err
 
 
 def main():
-    my_func(4, -2)
-    my_func(4, 2)
+    print(my_func(4, -2))
+    print(my_func(4, 2))
 
 
 if __name__ == "__main__":

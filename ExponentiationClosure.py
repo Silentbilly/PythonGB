@@ -16,11 +16,13 @@ def my_func(x, y):
         return my_func(x * x, -counter)
 
     except ValueError as err:
-        print(err)
+        return err
 
 
 def main():
     print(my_func(3, -4))
+    print(my_func(5, -44))
+    print(my_func(-3, -4))
 
 
 if __name__ == "__main__":
