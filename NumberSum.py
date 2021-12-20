@@ -7,18 +7,14 @@
 def main():
     def get_sum_string():
         sign_of_exit = '@'
-        input_str = ''
         sum_collector = 0
-        try:
-            input_str = input("Введите числа: ")
-            sum_int = sum(int(i) for i in input_str.split())
-            sum_collector += sum_int
-            return sum_collector if input_str == sign_of_exit else get_sum_string() + sum_collector
-        except ValueError as err:
-            print(err)
-            return get_sum_string() if input_str != sign_of_exit else sum_collector
 
-    print(get_sum_string())
+        input_str = input(f"Введите числа: ")
+        sum_int = sum(int(i) if i.isdigit() else 0 for i in input_str.split())
+        sum_collector += sum_int
+        return sum_collector if input_str.find(sign_of_exit) != -1 else get_sum_string() + sum_collector
+
+    print(f"Сумма всех введённых чисел: {get_sum_string()}")
 
 
 if __name__ == "__main__":
