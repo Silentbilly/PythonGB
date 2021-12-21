@@ -8,8 +8,8 @@ def int_func(string):
     try:
         symbol_list = list(string)
         for i in symbol_list:
-            if ord(i) not in range(65, 90) and ord(i) not in range(97, 122) and ord(i) != 32:
-                raise ValueError("Необходимо вводить только латинские буквы")
+            if ord(i) not in range(97, 122) and ord(i) != 32:
+                raise ValueError("Необходимо вводить только маленькие латинские буквы")
         str_list = string.split()
         return " ".join(map(str, str_list)).title()
     except ValueError as err:
@@ -17,6 +17,7 @@ def int_func(string):
 
 
 def main():
+    print(int_func("honestly speaking i wanna say"))
     print(int_func("as a MAN I WANT TO tell U"))
     print(int_func("Что ничего не получится прямо СЕЙЧАС"))
     print(int_func("Bu may be in december 31th"))

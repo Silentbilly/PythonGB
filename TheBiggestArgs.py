@@ -9,7 +9,7 @@ def my_func(arg_1, arg_2, arg_3):
 
 
 def main():
-    arg_1 = 1
+    arg_1 = 6
     arg_2 = 2
     arg_3 = 3
     print(f"Сумма наибольших аргументов: {my_func(arg_1, arg_2, arg_3)}")
