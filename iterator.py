@@ -20,7 +20,7 @@ def get_number_from_start_to_end(start, end):
 def get_repeatable_list(initial_list):
     i = 0
     for el in cycle(initial_list):
-        if i > 7:
+        if i >= len(initial_list):
             break
         print(el)
         i += 1
@@ -28,7 +28,8 @@ def get_repeatable_list(initial_list):
 
 def main():
     get_number_from_start_to_end(3, 10)
-    get_repeatable_list(range(0, 20))
+    print('*_' * 100)
+    get_repeatable_list(range(0, 21))
 
 
 if __name__ == "__main__":
