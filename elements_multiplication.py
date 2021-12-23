@@ -5,14 +5,14 @@
 from functools import reduce
 
 
-def list_generator():
+def multiple_elements():
     new_list = [el for el in range(100, 1001, 2)]
 
-    print(f"The list: {new_list}\nMultip: {reduce(lambda prev_el, el: prev_el * el, new_list )}\n")
+    print(f"The list: {new_list}\nMultiplication of elements: {reduce(lambda prev_el, el: prev_el * el, new_list)}\n")
 
 
 def main():
-    list_generator()
+    multiple_elements()
 
 
 if __name__ == "__main__":
