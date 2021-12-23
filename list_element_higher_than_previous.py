@@ -8,7 +8,7 @@ import random
 
 def list_generator(initial_list):
     new_list = [el for el in initial_list if el > initial_list[initial_list.index(el) - 1]][1:]
-    print(f"Initial list: {initial_list}\nNew list: {new_list}")
+    print(f"Initial list: {initial_list}\nNew list: {new_list}\n")
 
 
 def main():
