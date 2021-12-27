@@ -6,3 +6,4 @@ input_text = " "
 while input_text != "":
     input_text = input(">/")
     my_file.write(input_text + "\n") if input_text != "" else my_file.write(input_text)
+my_file.close()
