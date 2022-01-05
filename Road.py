@@ -24,7 +24,7 @@ class Road:
 
 def main():
     road = Road(20, 5000)
-    print(f"Масса асфальта длиной {road.length} и шириной {road.width} = {road.get_asphalt_mass(25, 5)} т.")
+    print(f"Масса асфальта c длиной {road.length} и шириной {road.width} = {road.get_asphalt_mass(25, 5)} т.")
 
 
 if __name__ == "__main__":
