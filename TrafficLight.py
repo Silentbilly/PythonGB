@@ -19,8 +19,7 @@ class TrafficLight:
 
     def running(self):
         num_input = turtle.Screen()
-        number_of_iterations = num_input.numinput("Счётчик ресурса", "Введите число:", 2, minval=1,
-                                                  maxval=10)
+        number_of_iterations = num_input.numinput("Счётчик ресурса", "Введите число:", 2, minval=1, maxval=10)
 
         red_light = turtle.Turtle()
         red_light.shape("circle")
